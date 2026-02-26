@@ -1,0 +1,34 @@
+2026-02-25T08:15:01Z INFO  [auth-service] User login successful userId=U1023 ip=192.168.1.10
+2026-02-25T08:15:04Z INFO  [payment-service] Payment initiated orderId=ORD8891 amount=250.00 currency=USD
+2026-02-25T08:15:06Z WARN  [inventory-service] Low stock productId=P778 remaining=3
+2026-02-25T08:15:08Z ERROR [payment-service] Payment gateway timeout orderId=ORD8891 retry=1
+2026-02-25T08:15:09Z INFO  [payment-service] Retrying payment orderId=ORD8891
+2026-02-25T08:15:11Z ERROR [database] Connection refused host=db-prod-01 port=5432
+2026-02-25T08:15:12Z ERROR [payment-service] Payment failed orderId=ORD8891 reason=DB_CONNECTION_FAILED
+2026-02-25T08:16:00Z INFO  [auth-service] Token refreshed userId=U1023
+2026-02-25T08:17:22Z WARN  [api-gateway] High response time endpoint=/api/pay latency=1200ms
+2026-02-25T08:18:45Z ERROR [order-service] NullPointerException at OrderProcessor.java:114
+2026-02-25T08:19:01Z INFO  [scheduler] Nightly batch job started jobId=JOB445
+2026-02-25T08:19:35Z ERROR [scheduler] OutOfMemoryError Java heap space jobId=JOB445
+2026-02-25T08:20:10Z INFO  [scheduler] Restarting batch job jobId=JOB445
+2026-02-25T08:21:30Z ERROR [api-gateway] 502 Bad Gateway upstream=payment-service
+2026-02-25T08:22:00Z WARN  [security] Multiple failed login attempts userId=U998
+2026-02-25T08:22:30Z ERROR [security] Account locked userId=U998
+2026-02-25T08:23:00Z INFO  [system] CPU usage=85% memory=78%
+2026-02-25T08:23:45Z WARN  [system] Disk usage high mount=/data usage=92%
+2026-02-25T08:24:12Z ERROR [system] Disk write failure mount=/data error=IO_EXCEPTION
+2026-02-25T08:25:00Z INFO  [health-check] All services running
+2026-02-25T08:15:12Z ERROR [payment-service] Payment failed orderId=ORD8891 reason=DB_CONNECTION_FAILED
+2026-02-25T08:16:00Z INFO  [auth-service] Token refreshed userId=U1023
+2026-02-25T08:17:22Z WARN  [api-gateway] High response time endpoint=/api/pay latency=1200ms
+2026-02-25T08:18:45Z ERROR [order-service] NullPointerException at OrderProcessor.java:114
+2026-02-25T08:19:01Z INFO  [scheduler] Nightly batch job started jobId=JOB445
+2026-02-25T08:19:35Z ERROR [scheduler] OutOfMemoryError Java heap space jobId=JOB445
+2026-02-25T08:20:10Z INFO  [scheduler] Restarting batch job jobId=JOB445
+2026-02-25T08:21:30Z ERROR [api-gateway] 502 Bad Gateway upstream=payment-service
+2026-02-25T08:22:00Z WARN  [security] Multiple failed login attempts userId=U998
+2026-02-25T08:22:30Z ERROR [security] Account locked userId=U998
+2026-02-25T08:23:00Z INFO  [system] CPU usage=85% memory=78%
+2026-02-25T08:23:45Z WARN  [system] Disk usage high mount=/data usage=92%
+2026-02-25T08:24:12Z ERROR [system] Disk write failure mount=/data error=IO_EXCEPTION
+2026-02-25T08:25:00Z INFO  [health-check] All services running

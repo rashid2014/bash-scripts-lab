@@ -1,0 +1,5 @@
+Name Math English Science
+Amina 85 78 92
+Rahim 60 55 70
+Karim 95 88 90
+Sara 45 50 40
